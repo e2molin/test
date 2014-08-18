@@ -1,0 +1,36 @@
+﻿<html ng-app="munisApp">
+<head>
+    <meta charset="utf-8">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+<script>
+    var munisApp = angular.module('munisApp', []);
+    munisApp.controller('MunicipioCtrl', function ($scope){
+        $scope.names = ['Milmarcos', 'Molina de Aragón', 'Calmarza'];
+        //Método para añadir municipio
+		$scope.addMunicipio = function() {
+            $scope.names.push($scope.enteredName);
+        };
+		
+		//Método para eliminar municipio
+		$scope.removeMuni = function(name) {
+			var i = $scope.names.indexOf(name);
+			$scope.names.splice(i, 1);
+		};
+		
+    });
+</script>
+</head>
+<body ng-controller="MunicipioCtrl">
+    <!--Este código actúa como un bucle, creando una entrada para cada elemento de la lista-->
+    <ul>
+        <li ng-repeat="name in names">
+			{{name}} 
+			<a href="" ng-click="removeMuni(name)">Eliminar</a></li>
+		</li>
+    </ul>
+    <!--Cuando se pulsa el botón de acción se ejecuta el método addMunicipio()-->
+    <form ng-submit="addMunicipio()">
+        Introduce un municipio<input type="text" ng-model="enteredName"><input type="submit" value="add">
+    </form>
+</body>
+</html>

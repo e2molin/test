@@ -1,0 +1,40 @@
+[{
+	"name":"Madrid",	
+	"population":5400000,
+	"capitalcity":"Madrid"
+},
+{
+	"name":"Barcelona",
+	"population":2000000,
+	"capitalcity":"Barna"
+},
+{
+	"name":"Málaga",
+	"population":650000,
+	"capitalcity":"Málaga"
+},
+{
+	"name":"Bizkaia",
+	"population":250000,
+	"capitalcity":"Bilbo"
+},
+{
+	"name":"Valencia-Valencia",
+	"population":420000,
+	"capitalcity":"Valencia"
+},
+{
+	"name":"Zaragoza",
+	"population":380000,
+	"capitalcity":"Zaragoza"
+},
+{
+	"name":"Gipuzkoa",
+	"population":280000,
+	"capitalcity":"Donostia"
+},
+{
+	"name":"Ciudad Real",
+	"population":110000,
+	"capitalcity":"Ciudad Real"
+}]

@@ -1,0 +1,432 @@
+<html><head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="equipbasicoref_files/functions.js"></script>
+		<link rel="stylesheet" type="text/css" href="equipbasicoref_files/estilos.css">
+		<link rel="shortcut icon" href="http://centrodedescargas.cnig.es/CentroDescargas/img/favicon.ico">
+		<title>
+			Centro Nacional de Información Geográfica
+			-
+			Equipamiento Geográfico de Referencia Nacional
+		</title>
+	</head>
+<body id="body">
+
+
+
+
+
+
+<div class="idiomas">
+	 
+	<ul class="idiomas">
+		<li><a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarIdioma.do?lang=ES" title="Bienvenido">Bienvenido</a> |</li>
+		<li><a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarIdioma.do?lang=EN" title="Welcome">Welcome</a> |</li>
+		<li><a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarIdioma.do?lang=FR" title="Bienvenue ">Bienvenue</a></li>
+	</ul>
+</div>
+
+<div class="cabecera">
+	
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/inicio.do"><img src="equipbasicoref_files/cabecera.jpg" alt="Centro de Descargas del Centro Nacional de Información Geográfica"></a>
+</div>
+
+<div class="login">
+<div class="flotaizq tit4">&nbsp;</div>
+<form name="UserForm" id="loginForm" method="POST" action="/CentroDescargas/user.do" class="formulario">
+	<input name="accion" value="logar" id="loginAccion" type="hidden">
+	
+		 &nbsp; &nbsp; &nbsp; 
+			Usuario
+		<input name="usuario.id" type="text">
+		Contraseña
+		<input name="usuario.password" value="" type="password">
+		<input value="Enviar" class="boton3" type="submit">		
+			&nbsp;
+			<span class="boton"> 
+			<a href="http://centrodedescargas.cnig.es/CentroDescargas/registro.do">Registrarse</a> 
+			</span>&nbsp;
+			<span class="boton"> 
+			<a href="http://centrodedescargas.cnig.es/CentroDescargas/olvidoPassword.do?accion=loadScreen">¿Olvidó su contraseña?</a> 
+			</span>
+	
+	
+</form>
+
+</div>
+
+
+
+
+<div id="menu">
+<div class="btmen" style="width: 15%">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarMenu.do?destino=presentacion" accesskey="1" title="Presentación">Presentación</a>
+</div>
+<div class="btmen" style="width: 15%">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/catalogo.do" accesskey="7" title="Catálogo de productos">Catálogo de productos</a>
+</div>
+<div class="btmen" style="width: 15%">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/buscador.do" accesskey="4" title="Búsqueda en visor">Búsqueda en visor</a>
+</div>
+<div class="btmen" style="width: 15%">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/buscadorCatalogo.do" accesskey="5" title="Búsqueda avanzada">Búsqueda avanzada</a>
+</div>
+<div class="btmen" style="width: 30%">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento.do?method=mostrarEquipamiento" accesskey="6" title="Equipamiento Geográfico de Referencia Nacional">Equipamiento Geográfico de Referencia Nacional</a>
+</div>
+<div class="fin" style="width: 10%">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarMenu.do?destino=ayuda" accesskey="8" title="Ayuda">Ayuda</a> 
+</div>
+</div>
+<br>
+<div class="login" style="width:80%;" align="right">
+	<div style="width:12%;float:right;height:28px;">
+			<a href="http://centrodedescargas.cnig.es/CentroDescargas/rss.do?accion=cargaRss"> 
+            	<img src="equipbasicoref_files/rssBlue.png" title="RSS novedades" alt="RSS Novedades">
+			</a>
+			<a href="http://www.facebook.com/pages/Instituto-Geografico-Nacional-de-Espana-CNIG/156297191073688#%21/pages/Instituto-Geografico-Nacional-de-Espana-CNIG/156297191073688?v=wall" target="_blank">
+			<img src="equipbasicoref_files/IGN_facebook.png" title="IGN Facebook" alt="IGN Facebook"></a>
+			<a target="_blank" href="http://twitter.com/#%21/IGNSpain">
+			<img src="equipbasicoref_files/IGN_Twitter.png" title="IGN Twitter" alt="IGN Twitter">
+			</a>
+			<a target="_blank" href="http://www.youtube.com/user/IGNSpain">
+				<img src="equipbasicoref_files/IGN_Youtube2.png" title="IGN Youtube" alt="IGN Youtube">
+			</a>	
+	</div>
+	<div style="width:7%;float:right;height:28px;margin-top:8px;" align="right">
+			<img src="equipbasicoref_files/ico_contacto.gif" alt="Contacto">
+			<a href="http://centrodedescargas.cnig.es/CentroDescargas/infocontacto.do" accesskey="3" class="subrayado">contacto</a>
+			
+	</div>
+	<div style="width:10%;float:right;height:28px;margin-top:8px;">
+		<img src="equipbasicoref_files/ico_mapa.jpg" alt="Mapa Web">	
+		<a href="http://centrodedescargas.cnig.es/CentroDescargas/mapa.do" accesskey="2" class="subrayado">Mapa Web</a>
+	</div>
+	
+</div>	
+	
+
+	<form name="EquipamientoForm" id="EquipamientoForm" method="POST" action="/CentroDescargas/equipamiento.do">
+		<div class="contenedor1">
+			<div class="miga aliizq" style="width: 1024px">
+				<a href="http://centrodedescargas.cnig.es/CentroDescargas/inicio.do">Centro de Descargas&nbsp;⁄&nbsp;
+					Equipamiento Geográfico de Referencia Nacional</a>
+				<br><br>
+				<div style="font-size:1.5em;font-weight:bold ;width: 95%; text-align: left">
+					Equipamiento Geográfico de Referencia Nacional
+					<img src="equipbasicoref_files/montana.jpg" title="Equipamiento Geográfico de Referencia Nacional" alt="Equipamiento Geográfico de Referencia Nacional" border="0">
+				</div>
+			</div>
+			<br>
+			<div class="aliJustify" style="width:90%;font-size: 0.9em;">
+				Los elementos que componen el Equipamiento Geográfico de Referencia 
+Nacional (EGRN) están descritos en el artículo 1.1. de la  
+				<a href="http://centrodedescargas.cnig.es/CentroDescargas/documentos/FOM_956_2008.pdf" class="subrayado" target="_blank" title="ver Orden FOM/956/2008
+					(Se abre en ventana nueva)">
+					Orden FOM 956/2008  
+				</a> 
+				. Según la citada Orden, la información geográfica digital 
+comprendida en el EGRN tiene el carácter de 'información del sector 
+público', y su uso, en cualquier caso, tendrá carácter libre y gratuito,
+ siempre que se mencione al Instituto Geográfico Nacional como 
+propietario de los datos,
+				<strong>
+					mediante la fórmula '© Instituto Geográfico Nacional '.
+				</strong>
+			</div>
+			<br>
+			<div class="aliJustify" style="width:90%;font-size: 0.9em;">
+				Para la descarga de los elementos del EGRN 
+				<strong>
+					no es necesaria la aceptación de licencia 
+				</strong> 
+				y, por tanto, tampoco es necesario registrarse como usuario.
+			</div>
+			<br>
+			<div class="aliJustify" style="width:90%;font-size: 0.9em;">
+				A continuación se muestran los documentos y herramientas del EGRN disponibles para descarga:
+			</div>
+			<br>
+			
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							COORDENADAS DE LA RED DE ORDEN INFERIOR : 
+							<img src="equipbasicoref_files/ico_vertice_geodesico.jpg" alt="COORDENADAS DE LA RED DE ORDEN INFERIOR " title="COORDENADAS DE LA RED DE ORDEN INFERIOR ">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							 Archivo excel que contiene un listado con todos los vértices de 
+la Red Geodésica Nacional, ordenados por el número de hoja del MTN50 a 
+la que pertenecen, con coordenadas de los vértices en ETRS89 y ED50 para
+ Península y Baleares, y en REGCAN95 para Canarias, tanto en geográficas
+ como en UTM.
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/ROI.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							CUADRÍCULAS CARTOGRÁFICAS MTN25 y MTN50 : 
+							<img src="equipbasicoref_files/ico_cuadricula.jpg" alt="CUADRÍCULAS CARTOGRÁFICAS MTN25 y MTN50 " title="CUADRÍCULAS CARTOGRÁFICAS MTN25 y MTN50 ">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							 Archivo zip que contiene varios archivos en formato shape y de 
+texto (WKT) con las cuadrículas cartográficas oficiales del MTN50 y 
+MTN25 para toda España, en ED50 y ETRS89, en coordenadas geográficas 
+longitud y latitud. Los archivos shape están divididos en tres zonas: 
+Península y Baleares; Canarias; Ceuta, Melilla y posesiones españolas en
+ el Norte de África 
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/cuadriculas.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							LÍNEAS LÍMITE MUNICIPALES : 
+							<img src="equipbasicoref_files/ico_lineas_limite.jpg" alt="LÍNEAS LÍMITE MUNICIPALES " title="LÍNEAS LÍMITE MUNICIPALES ">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							Archivo zip que contiene archivos shape de punto (centroides de 
+los municipios), de línea (líneas límite individuales entre dos 
+municipios) y de polígono (contornos municipales cerrados). Sistema 
+geodésico de referencia ED50 y ETRS89 (en Canarias REGCAN95, compatible 
+con WGS84, ETRS89), coordenadas geográficas longitud y latitud.<br>Esta 
+geometría de las líneas límite tiene, en el mejor de los casos y con la 
+excepción de aquellas líneas límite que hayan sido replanteadas sobre el
+ terreno, la precisión de la escala 1/25.000, condicionada por los 
+métodos e instrumentos topográficos utilizados para su obtención y 
+posterior edición cartográfica. Por consiguiente, no se puede utilizar 
+para la representación de los límites jurisdiccionales en cartografías a
+ mayor escala (denominador más pequeño). Algunas líneas o tramos de 
+líneas pueden ser "provisionales", es decir, carecer de valor jurídico 
+por constar en las correspondientes actas de deslinde la falta de 
+acuerdo entre las partes.<br>Para obtener una geometría más precisa es 
+necesario el replanteo sobre el terreno de las líneas límite, lo que 
+generalmente es factible partiendo de la documentación técnica (cuaderno
+ topográfico de campo) y jurídica (acta de deslinde) con la que figura 
+inscrita cada una de ellas en el Registro Central de Cartografía de la 
+Dirección General del Instituto Geográfico Nacional.<br>Además, esta 
+geometría más precisa, ha de ser refrendada jurídicamente por los 
+propios Ayuntamientos mediante el levantamiento de actas conjuntas, 
+adicionales a las utilizadas para el replanteo, conforme a los 
+procedimientos administrativos establecidos en la legislación aplicable 
+en cada caso.
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/lineas_limite.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							HOJAS REGISTRALES : 
+							<img src="equipbasicoref_files/ico_hojas_registrales.jpg" alt="HOJAS REGISTRALES " title="HOJAS REGISTRALES ">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+Según el Artículo 21.1 del Real Decreto 1545/2007, de 23 de noviembre, por el que se regula el Sistema Cartográfico Nacional el RCC organizará la información sobre Delimitaciones Territoriales mediante un sistema informático que contenga una HOJA REGISTRAL  individual para cada línea límite jurisdiccional. También tendrán esta consideración registral las fronteras internacionales  y las líneas de costa. 
+Así mismo el apartado 2 del artículo 21 señala que la inscripción de cada línea límite deberá contener, como mínimo, la siguiente información:
+<ul>
+<li>Identificación de la línea límite.</li>
+<li>Definición de la línea mediante la descripción geométrica establecida por los vértices que la constituyen y la descripción literal de las líneas que los unen.</li>
+<li>Referencia al título jurídico en que trae causa su inscripción.</li>
+</ul>							
+							<br><br>
+							<div class="enlaces">
+								<a href="http://projects.develmap.com/siglimviewer" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Búsqueda de hoja registral 
+								</a>
+							</div>
+						</div>
+					</div>	
+
+					
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							PROGRAMA DE APLICACIONES GEODÉSICAS: 
+							<img src="equipbasicoref_files/ico_progr_aplic.jpg" alt="PROGRAMA DE APLICACIONES GEODÉSICAS" title="PROGRAMA DE APLICACIONES GEODÉSICAS">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							Programa que incluye las siguientes utilidades:<br>
+- Calculadora geodésica: conversiones entre coordenadas geográficas y 
+UTM y viceversa, cambios de sistema geodésico de referencia ED50-ETRS89 y
+ viceversa, cálculo de la ondulación del geoide y desviación de la 
+vertical basado en el modelo EGM2008 ajustado a REDNAP.<br>
+- Datos GNSS: permite descargar los datos GNSS de la red de estaciones 
+permanentes del IGN eligiendo fecha, intervalo de toma de datos y 
+estación deseada. Requiere conexión a Internet.<br>
+- Visor de redes geodésicas: Permite representar sobre cartografía la 
+red geodésicas y de nivelación, así como visualizar las reseñas de cada 
+punto.<br>
+- Actualizaciones: informa sobre actualizaciones del programa, nueva 
+rejilla del geoide o de cambio de sistema geodésico de referencia, 
+actualizaciones en la red de estaciones ERGNSS, en la REDNAP, en REGENTE
+ o ROI.
+
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/aplicaciones_geodesicas.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							MAPA DE DISTRIBUCIÓN DE LA CUADRÍCULA MTN50: 
+							<img src="equipbasicoref_files/ico_mapa_1M.jpg" alt="MAPA DE DISTRIBUCIÓN DE LA CUADRÍCULA MTN50" title="MAPA DE DISTRIBUCIÓN DE LA CUADRÍCULA MTN50">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							Mapa de España a escala 1:1.000.000 con la cuadrícula del MTN50 superpuesta, en formato png y con resolución de 250 ppp.
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/Mapa_cuadricula_MTN50.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							NOMENCLÁTOR GEOGRÁFICO BÁSICO DE ESPAÑA: 
+							<img src="equipbasicoref_files/ico_nomenclator.jpg" alt="NOMENCLÁTOR GEOGRÁFICO BÁSICO DE ESPAÑA" title="NOMENCLÁTOR GEOGRÁFICO BÁSICO DE ESPAÑA">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							Archivo zip que contiene la base de datos (en formato mdb de 
+Access) con la relación de topónimos con sus correspondientes 
+coordenadas procedentes de la depuración de los topónimos previamente 
+extraídos de la BCN25/BTN25, y que constituye la primera versión del 
+NOMENCLÁTOR GEOGRÁFICO BÁSICO DE ESPAÑA v.2013, (NGBEv2013). Las 
+coordenadas se encuentran en los sistemas geodésicos de referencia ED50 y
+ ETRS89 tanto en coordenadas geográficas longitud y latitud como en 
+coordenadas X, Y en proyección UTM en sus husos correspondientes 28, 29,
+ 30 y 31.
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/NGBEv2013.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							NOMENCLÁTOR GEOGRÁFICO CONCISO DE ESPAÑA: 
+							<img src="equipbasicoref_files/ico_NGCE.jpg" alt="NOMENCLÁTOR GEOGRÁFICO CONCISO DE ESPAÑA" title="NOMENCLÁTOR GEOGRÁFICO CONCISO DE ESPAÑA">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							El archivo zip contiene la base de datos (en formato mdb de 
+Access 2003) donde se relacionan los 3978 topónimos que constituyen la 
+versión 2012 del Nomenclátor Geográfico Conciso de España (NGCEv2012). 
+Esta actualización se ha realizado en base a la versión 1.0 del NGCE 
+publicado en el año 2006 por el IGN. Cada topónimo contiene, entre otros
+ atributos, sus coordenadas geográficas longitud y latitud en el sistema
+ geodésico de referencia ETRS89 para la Península, Islas Baleares, Ceuta
+ y Melilla y REGCAN95 para las Islas Canarias.
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/NGCEv2012.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+					<div class="aliizq productos">
+						<div class="flotaizq" style="float: left; width: 20%; height: 160px"><!-- 128 -->
+							<img src="equipbasicoref_files/flecha.gif" alt="flecha" border="0" height="11" width="6">
+							NOMENCLÁTOR GEOGRÁFICO DE MUNICIPIOS Y ENTIDADES DE POBLACIÓN: 
+							<img src="equipbasicoref_files/ico_BD_municipios-entidades.jpg" alt="NOMENCLÁTOR GEOGRÁFICO DE MUNICIPIOS Y ENTIDADES DE POBLACIÓN" title="NOMENCLÁTOR GEOGRÁFICO DE MUNICIPIOS Y ENTIDADES DE POBLACIÓN">
+						</div>
+						<div class="descripcion aliJustify" style="width: 90%; margin-top: 20px">
+							&nbsp;&nbsp;&nbsp;
+							Archivo zip que contiene la base de datos (en formato mdb de 
+Access 2003) con la información (denominaciones, coordenadas, altitud, 
+población, etc.) correspondientes a los municipios y entidades de 
+población españolas. Las fuentes de referencia para la elaboración de 
+esta base de datos son el Registro de Entidades Locales, Instituto 
+Nacional de Estadística y bases de datos cartográficas del Instituto 
+Geográfico Nacional. Se adjunta un documento en formato pdf con toda la 
+información auxiliar sobre la base de datos.
+							<br><br>
+							<div class="enlaces">
+								<a href="http://centrodedescargas.cnig.es/CentroDescargas/equipamiento/BD_Municipios-Entidades.zip" class="subrayado" target="_blank" title="Descargar(Se abre en ventana nueva)">Descargar 
+								</a>
+							</div>
+						</div>
+					</div>					
+				
+			
+		</div>
+	<br><br>
+	</form>
+
+
+
+
+
+<div id="pie">
+	<div>
+		<a id="En_validaciones" href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Fwww.cnig.es%2festilos%2fh_stylo2.css" target="_blank" title="Este enlace abre una ventana nueva">
+			<img src="equipbasicoref_files/css.jpg" title="Valid CSS" alt="Valid CSS">
+		</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a id="En_validaciones_1" href="http://validator.w3.org/check?uri=referer" target="_blank" title="Este enlace abre una ventana nueva">
+			<img src="equipbasicoref_files/xhtml.jpg" title="Valid XHTML 1.0 Transitional" alt="Valid XHTML 1.0 Transitional">
+		</a>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a id="En_validaciones2" href="http://www.w3.org/WAI/WCAG1AA-Conformance" target="_blank" title="Este enlace abre una ventana nueva">
+			<img src="equipbasicoref_files/dobleA.jpg" title="WCAG1AA-Conformance" alt="Icono de conformidad con el Nivel Doble-A de las Directrices de Accesibilidad para el Contenido Web 1.0 del W3C-WAI">
+		</a>								
+		&nbsp;
+		<!-- <a href="rss.do?accion=cargaRss">
+            <img src="/CentroDescargas/img/rssBlue.png" title="RSS novedades" alt="RSS Novedades">
+		</a>-->
+	</div>	
+	<div class="enlaces">
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarMenu.do?destino=accesibilidad" accesskey="0">Accesibilidad</a>&nbsp;|&nbsp;
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarMenu.do?destino=infoLegal">Información legal</a> &nbsp;|&nbsp; 
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarMenu.do?destino=propIntelectual">Propiedad intelectual</a> &nbsp;|&nbsp; 
+	<a href="http://centrodedescargas.cnig.es/CentroDescargas/cambiarMenu.do?destino=proteccionDatos">Protección de datos</a>
+	</div>
+	<div class="txtb buzon">
+		<a href="http://centrodedescargas.cnig.es/CentroDescargas/contacto.do"><img src="equipbasicoref_files/buzon.png" alt="sugerencias">
+			<br>
+			Sugerencias y comentarios</a>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+	function descargarEquip(codigo){
+		//document.getElementById("EquipamientoForm").target="_blank";
+		document.getElementById("EquipamientoForm").action="equipamiento.do?method=descargarEquipamiento&codEquip="+codigo;
+		document.getElementById("EquipamientoForm").submit();
+		}
+</script>
+
+</body></html>
