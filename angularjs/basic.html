@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<!--ng-app es una directiva AngularJS-->
+<html ng-app>
+<head>
+    <meta charset="utf-8">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+</head>
+<body>
+	<!--ng-model es una directiva AngularJS-->
+    Introduce un municipio <input type="text" ng-model="enteredName"><br/>
+	<!--{{enteredName}} es una data binding expression-->
+	Se está tecleando el municipio <strong>{{enteredName}}</strong>
+	
+	<div class="container" data-ng-init="names=['Milmarcos','Calmarza','Tartanedo','Algar de Mesa']">
+	<h3> Municipios</h3>
+	<ul>
+		<!-- data-ng-repeat es una directiva para iterar entre elementos de una lista-->
+		<li data-ng-repeat="item in names">{{item}}</li>
+	</ul>
+	</div>
+	
+	<!-- Directiva que ejecuta un código al hacer clic en el botón-->
+	<button ng-click="count = count + 1" ng-init="count=0">
+	  Increment
+	</button>
+	count: {{count}}
+
+</body>
+</html>
